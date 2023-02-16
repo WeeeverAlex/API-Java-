@@ -1,7 +1,12 @@
 package br.com.conta.api.pessoa;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 public class Pessoa {
 
+    @NotNull
+    @NotEmpty
     private String nome;
     private Integer idade;
     private String endereco;
